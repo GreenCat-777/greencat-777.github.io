@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 | Page Not Found</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Inline extra styling for 404 page */
+body {
+    position: relative;
+}
+.back-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 8px 18px;
+    border: 2px solid #29a32f;
+    border-radius: 6px;
+    color: #29a32f;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+.back-home:hover {
+    background-color: #29a32f;
+    color: #000000;
+}
+
+.snake-container {
+    text-align: center;
+    margin-top: 60px; /* avoid overlap with button */
+}
+#snakeGame {
+    border: 2px solid #29a32f;
+    margin-top: 20px;
+}
+.button-snake {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: 2px solid #29a32f;
+    border-radius: 6px;
+    color: #29a32f;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.button-snake:hover {
+    background-color: #29a32f;
+    color: #000000;
+}
+</style>
+</head>
+<body>
+<!-- Back to home button -->
+<a href="./index.html" class="back-home">Home</a>
+
+<div class="container snake-container" id="content">
+    <h1>404</h1>
+    <h2>Page not found</h2>
+    <p>Oops! Looks like you’re lost.</p>
+    <button class="button-snake" onclick="startSnake()">Wanna Play Snake?</button>
+</div>
+
+<script>
+function startSnake(){
+    const container = document.getElementById("content");
+    container.innerHTML = `
+        <h2>Snake Game</h2>
+        <canvas id="snakeGame" width="300" height="300"></canvas>
+        <p>Use arrow keys to move the snake. Eat green squares to grow!</p>
+    `;
+
+    const canvas = document.getElementById("snakeGame");
+    const c
