@@ -11,23 +11,23 @@
     text-align: center;
 }
 #snakeGame {
-    border: 2px solid #29a32f;
+    border: 2px solid #0ed145;
     margin-top: 20px;
 }
 .button-snake {
     display: inline-block;
     padding: 10px 25px;
     margin-top: 20px;
-    border: 2px solid #29a32f;
+    border: 2px solid #0ed145;
     border-radius: 6px;
-    color: #29a32f;
+    color: #0ed145;
     background: none;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s;
 }
 .button-snake:hover {
-    background-color: #29a32f;
+    background-color: #0ed145;
     color: #000000;
 }
 </style>
@@ -73,7 +73,7 @@ function startSnake(){
         ctx.fillRect(0,0,canvas.width,canvas.height);
 
         for(let i=0; i<snake.length; i++){
-            ctx.fillStyle = "#29a32f";
+            ctx.fillStyle = "#0ed145";
             ctx.fillRect(snake[i].x, snake[i].y, box, box);
         }
 
