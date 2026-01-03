@@ -1,0 +1,101 @@
+/* ===== Reset default styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #000000; /* black background */
+    color: #29a32f;           /* green text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ===== Main container ===== */
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* ===== Headings ===== */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* ===== Links ===== */
+a {
+    color: #29a32f;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* ===== Optional button style ===== */
+.button {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #29a32f;
+    border-radius: 6px;
+    color: #29a32f;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: #29a32f;
+    color: #000000;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+/* ===== Profile picture - small size ===== */
+.profile-pic {
+    width: 60px;            /* small size */
+    height: 60px;
+    border-radius: 50%;     
+    object-fit: cover;
+    margin-bottom: 15px;    
+    border: 2px solid #29a32f; 
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
