@@ -88,6 +88,25 @@ a:hover {
     margin-bottom: 15px;    
     border: 2px solid #29a32f; 
 }
+.back-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 8px 18px;
+    border: 2px solid #29a32f;
+    border-radius: 6px;
+    color: #29a32f;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    z-index: 1000;
+}
+
+.back-home:hover {
+    background-color: #29a32f;
+    color: #000000;
+}
 
 /* ===== Responsive ===== */
 @media (max-width: 600px) {
@@ -99,3 +118,4 @@ a:hover {
         font-size: 1.25rem;
     }
 }
+
