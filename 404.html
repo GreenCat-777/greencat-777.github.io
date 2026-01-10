@@ -6,15 +6,39 @@
   <!-- Load external CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Redirect -->
-  <meta http-equiv="refresh" content="0; url=https://greencatbio.vercel.app/404">
-
   <title>Redirecting…</title>
+
+  <script>
+    // Redirect to ./ after 10 seconds (10000 ms)
+    setTimeout(() => {
+      window.location.href = "./";
+    }, 10000);
+  </script>
 </head>
 <body>
   <div class="redirect-container">
-    <p>Redirecting to the new bio…</p>
-    <p>If it doesn’t work, <a href="https://greencatbio.vercel.app/">click here</a>.</p>
+    <h1>Page Moved</h1>
+    <p>You’ll be redirected in <span id="countdown">10</span> seconds.</p>
+
+    <div class="buttons">
+        <a href="./" class="button">Home</a>
+        <a href="./snake.html" class="button">Play Snake</a>
+    </div>
   </div>
+
+  <script>
+    // Countdown display
+    let seconds = 10;
+    const countdown = document.getElementById("countdown");
+
+    const interval = setInterval(() => {
+      seconds--;
+      countdown.textContent = seconds;
+
+      if (seconds <= 0) {
+        clearInterval(interval);
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
