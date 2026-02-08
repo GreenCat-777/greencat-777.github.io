@@ -13,6 +13,7 @@ if [ -f /mnt/base-us/alpine.ext3 ]; then
 
     echo "Cleanup complete."
 fi
+$ALPINE_URL="https://github.com/schuhumi/alpine_kindle/releases/download/v0.2-alpha2/alpine.zip"
 cd /mnt/base-us/
 echo "Download starting, this may take a minute"
 curl -L -o "alpine.zip" "$ALPINE_URL"
